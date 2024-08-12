@@ -28,6 +28,6 @@ Route::controller(PageController::class)->group(function() {
 
     Route::get('blog', 'blog')->name('blog');
 
-    Route::get('blog/{slug}', 'post')->name('post');
+    Route::get('blog/{post:slug}', 'post')->name('post');
 
 }); 

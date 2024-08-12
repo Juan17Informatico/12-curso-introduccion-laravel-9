@@ -1,5 +1,8 @@
 @extends('template')
 
 @section('content')
-    {{$post}}   
+    <h1>{{$post->title}}</h1>
+    <p>
+        {{$post->body}}
+    </p>   
 @endsection
